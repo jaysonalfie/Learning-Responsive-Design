@@ -28,9 +28,9 @@ body {
   
 }
 .container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
-  background: #23424a;
+ 
   color: white;
   padding: 50px 0;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .container2{
-  width: 70%;
+  width: 80%;
   padding:50px 0;
   margin :0 auto;
   background: white;
