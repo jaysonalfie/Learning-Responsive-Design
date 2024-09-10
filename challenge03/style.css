@@ -1,8 +1,6 @@
-/* style.css */
+style.css
 
-*, 
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
 
 }
@@ -17,45 +15,49 @@
     --background-color:#23424A;
     --font-color:#136C72;
     --button-color:#38CFD9;
-    --robotoBlack-font-size:48px;
-    --robotoRegular-font-size:18px;
-    --robotoBold-font-size:21px
-
- }
+    --robotoBlack-font-size:2.9rem;
+    --robotoRegular-font-size:1.3rem;
+    --robotoBold-font-size:1.3rem;
+}
 
 body{
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: "Roboto", sans-serif;
+    margin: 0;    
+    font-size: var(--robotoRegular-font-size);
 }
 
 .main_container{
+    padding: 6.25rem 0;
     background-color: var(--background-color);
-    /* max-width: 750px;
-    width: 80%; */
-    /* padding: 3em;*/
-    width: 100%;
+    color: white;
+   
 }
-.container_1{
-    padding: 7rem;
+
+.container{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+.container-text{
     width: 60%;
+   
 }
-.container_1 h1{
+.container-text h1{
     font-size: var(--robotoBlack-font-size);
-    color: white;
+    margin-bottom: 2rem;
 }
-.container_1 p{
-    font-size: var(--robotoRegular-font-size);
-    color: white;
-    margin-top: 1rem;
+.container-text p{
     line-height: 1.5;
+    margin-bottom: 2rem;
 }
 
 
-.container_1 .button{
-    margin-top: 2.9rem;
-}
-
-.container_1 button{
+/*em is usually the font size multiplied by the value applied to em
+16px = 1rem
+*/
+.container button{
     padding: 1rem 2.5rem;
     border-radius: 2rem;
     background-color: var(--button-color);
@@ -65,7 +67,11 @@ body{
     border: none;
 }
 
-.container_1 button:hover{
-    cursor: pointer;
-    background-color: var(--font-color);
+.container button:hover, button:focus{
+    opacity: .75;
 }
+
+/* .container_1 button:hover{
+    cursor: pointer;
+    /* background-color: var(--font-color); */
+    /* opacity: .75; */
