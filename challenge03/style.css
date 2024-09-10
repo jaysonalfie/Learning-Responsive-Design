@@ -18,7 +18,7 @@
     --font-color:#136C72;
     --button-color:#38CFD9;
     --robotoBlack-font-size:48px;
-    --robotoRegular-font-size:21px;
+    --robotoRegular-font-size:18px;
     --robotoBold-font-size:21px
 
  }
@@ -45,21 +45,24 @@ body{
 }
 .container_1 p{
     font-size: var(--robotoRegular-font-size);
-    color: var(--font-color);
-    padding-top: 1rem;
+    color: white;
+    margin-top: 1rem;
+    line-height: 1.5;
 }
 
 
 .container_1 .button{
-    margin-top: 2rem;
+    margin-top: 2.9rem;
 }
+
 .container_1 button{
     padding: 1rem 2.5rem;
     border-radius: 2rem;
     background-color: var(--button-color);
     font-size: var(--robotoBold-font-size);
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
+    border: none;
 }
 
 .container_1 button:hover{
