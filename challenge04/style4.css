@@ -1,0 +1,130 @@
+/* 
+////// For this challenge ///////
+
+- You will have to modify the HTML
+
+- You can add new classes in the HTML
+  if you need to
+
+// Requirements
+1. The headings in the first row must be
+   a different color
+2. The two .col at the bottom must go next
+   to one another
+3. The section at the bottom should have
+   a dark background color and a different
+   color of text
+4. I've removed the "gap" that I created,
+   so you'll have to add it back in
+
+   */
+
+   *, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root{
+    --heading-color:#87629A;
+    --bottom-background:#136C72;
+
+    /*Font sizes*/
+    --heading:3rem;
+    --regularFont-size:1.3rem;
+    --blackfont-size:2.25rem;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    /* display: flex => flex container */
+    display: flex;
+
+    /* can't use yet */
+    gap: 100px;
+}
+
+.col {
+    /* these are now flex items */
+    width: 100%;
+}
+
+.hero {
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #FFF;
+}
+
+.hero__text {
+    width: 60%;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+.container2{
+    width: 80%;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+.container2 .row .col h2{
+    color: var(--heading-color);
+}
+
+/*Degree to which content behind an element is hidden
+0 =>completely hidden
+1 -> visually solid*/
+.container2 .row .col h2:hover, h2:focus{
+    opacity: .75;
+}
+
+/*Display flex = > flex contiainer and child items become the flex items*/
+.hero2{
+    background-color: var(--bottom-background);
+    padding: 3.25rem 1rem;
+    color: #fff;
+}
+.container3{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    /* gap:6.25rem; */
+
+}
+.container3 .col2{
+    
+    width: 100%;
+}
