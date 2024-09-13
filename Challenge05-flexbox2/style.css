@@ -1,0 +1,124 @@
+/* style.css */
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+:root{
+    --regular-font:1.3rem;
+    --heading-font:3rem;
+    --bold-font:2.25rem;
+
+    /*Colors*/
+    --background-color:#23424A;
+    --button-color:#38CFD9;
+    --bottom-background:#136C72;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: var(--heading-font);
+    margin-top: 0;
+}
+
+/*Ensure image never grows beyond its width and to shrink incase the parent is shrinking*/
+img{
+    max-width: 100%;
+}
+
+.hero{
+ background-color: var(--background-color);
+ padding:6.25rem 0;
+ color: #fff;
+}
+.hero__text{
+    width: 62%;
+}
+
+.hero__img{
+    align-self: flex-start;
+    width: 34%;
+}
+
+.hero p {
+    margin-bottom: 3em;
+}
+
+.container{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: #23424A;
+    font-weight: 900;
+    background-color:var(--button-color);
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+
+.container_right{
+    margin-top: 3rem;
+}
+.col_right_text{
+   width:62%;
+}
+
+.col_right_text h2{
+    color: var(--bottom-background);
+}
+
+.col_right_text p{
+    margin-bottom: 2rem;
+}
+
+.container_left{
+    margin-top: 2rem;
+    background-color: var(--bottom-background);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+}
+
+
+.col_left_text{
+    padding: 2rem;
+}
+.col_left_text .col p{
+  padding-bottom: 3rem;
+}
