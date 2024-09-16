@@ -91,11 +91,11 @@ img{
     opacity: .75; 
 }
 
-.container_right{
+/* .container_right{
     margin-top: 3rem;
 }
 .col_right_text{
-   width:62%;
+   padding-right: 1.8rem;
 }
 
 .col_right_text h2{
@@ -121,4 +121,29 @@ img{
 }
 .col_left_text .col p{
   padding-bottom: 3rem;
+} */
+
+
+/*
+1em is relative to the parent element font size eg if the parent is 16px = 1em, if 20px =1em
+em inherits the size of the parent
+1rem is relative to the root html element
+*/
+.main {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+.sub-title{
+    color:#87629A;
+}
+.primary-content{
+    width: 62%;
+}
+
+.sidebar{
+    width: 34%;
+    text-align: center;
+    padding: 1em;
+    color:#fff;
+    background-color: var(--bottom-background);
 }
