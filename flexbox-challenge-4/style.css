@@ -96,6 +96,7 @@ header{
 /*Primary section*/
 .primary__section h2{
     text-align: center;
+    color:var(--ternary-color);
 }
 
 .primary__paragraph{
