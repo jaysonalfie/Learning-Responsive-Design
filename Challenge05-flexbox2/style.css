@@ -181,11 +181,17 @@ header {
     padding: 0;
     list-style: none;
     display: flex;
+    border:1px solid red;
     font-size: 1rem;
 }
 
+.nav__list--primary{
+    margin: 0 auto;
+}
 /*For the plus operator...it does not select the first element in the div
-selects those that have nav__items before them*/
+selects those that have nav__items before them
+
+-Margin:0 auto; - centers the element*/
 .nav__item  + .nav__item{
     margin-left: 1em;
 
