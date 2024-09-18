@@ -1,0 +1,151 @@
+/* style.css */
+/*
+maximum width of a “container”
+ is 1128px
+
+ In the very first section try setting a min-height 
+ of 660px and using what we’ve covered in
+ flexbox to center the content vertically
+ */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root{
+    /*primary-colors*/
+    --header--color:#F3EED9;
+    --secondary-color:#222C2A;
+    --ternary-color:#824936;
+
+    /*Font sizes*/
+    --paragraphHeading-font: 1.125rem;
+    --heading-font: 3.75rem;
+    --secondHeading-font: 2.25rem;
+    --paragraph-font: 1.3125rem;
+}
+
+body{
+    margin: 0;
+    font-size: var(--paragraph-font);
+}
+
+h1{
+    font-size: var(--heading-font);
+    color: var(--ternary-color);
+    font-family: 'Playfair', sans-serif;
+    font-weight: 900;
+}
+
+p{
+    font-size: var(--paragraph-font);
+}
+
+/*ensures image does not groe beyond its width and to shrink according to parent element*/
+img{
+    max-width: 100%;
+}
+header{
+    background-color: var(--header--color);
+}
+
+/* section {
+    margin-top: 3em;
+} */
+
+/*Container*/
+.container{
+    width: 80%;
+    max-width:1128px;
+    margin: 0 auto;
+    min-height: 600px;
+    
+}
+
+.row{
+    display:flex;
+    justify-content: space-between;
+}
+
+.main__container{
+    width: 80%;
+    max-width: 1128px;
+    margin: 0 auto;
+    padding :3.5rem 0;
+    /* border: 2px solid blue; */
+}
+
+
+.container__hero{
+    padding: 6.25rem 0;
+    text-align: center;     
+}
+
+.header__text{
+    margin-top: 5rem;
+    
+}
+
+.header__text p{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+    font-size: var(--paragraphHeading-font);
+}
+
+/*Primary section*/
+.primary__section h2{
+    text-align: center;
+}
+
+.primary__paragraph{
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--paragraph-font);
+}
+.primary__paragraph + .primary__paragraph{
+    margin-left: 1em;
+}
+
+.primary__paragraph{
+    width: 50%;
+}
+
+/*Secondary section*/
+.secondary__section{
+    background-color: var(--secondary-color);
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.secondary__section .hero__text h2{
+    color: var(--header--color);
+}
+
+.hero__text{
+    width:50%
+}
+
+.hero_img{
+    width: 50%;
+    margin-left: 1.1em;
+}
+
+/*Ternary section*/
+.ternary__section{
+    background-color: var(--ternary-color);
+    color: #fff;
+}
+
+.ternary__section .hero__text2 h2{
+    color: var(--header--color);
+}
+
+.ternary__section .hero__text2{
+    width: 50%;
+    margin-left: 1.1em;
+}
+
+.ternary__section .hero_img2{
+    width:50%;
+}
+
