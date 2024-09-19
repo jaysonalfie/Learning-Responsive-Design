@@ -159,7 +159,7 @@ em => flexibility and dynamic scaling
 /* navbar 
 Flex parent => Direct children
 Flex grow => allows element to grow if there is extra space in the parent element
-Felx shrink => allows element to shrink if there is no extra space in the parent component*/
+Flex shrink => allows element to shrink if there is no extra space in the parent component*/
 header {
   background-color: var(--nav-color);
   padding: 0.5em 0;
