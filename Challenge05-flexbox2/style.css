@@ -181,7 +181,7 @@ header {
     padding: 0;
     list-style: none;
     display: flex;
-    border:1px solid red;
+    /* border:1px solid red; */
     font-size: 1rem;
 }
 
@@ -214,3 +214,23 @@ selects those that have nav__items before them
     opacity:.75;
 }
 
+/*Media queries*/
+/*600px or smaller - for mobile*/
+@media (max-width:600px ){
+
+    /*Block allows for stacking*/
+    .row{
+        display:block;
+    }
+
+    .hero__text,
+    .hero__img ,
+    .primary-content,
+    .sidebar{
+        width: 100%;
+    }
+
+    .hero__img{
+        margin-top: 2.5em;
+    }
+}
