@@ -17,6 +17,8 @@
 }
 
 
+
+
 :root{
     --regular-font:1.3rem;
     --heading-font:3rem;
@@ -215,8 +217,9 @@ selects those that have nav__items before them
 }
 
 /*Media queries*/
-/*600px or smaller - for mobile*/
-@media (max-width:600px ){
+/*600px or smaller - for mobile
+Breakpoint-width at which the layout changes eg 600px, 900px, 1200px, 1800px*/
+@media (max-width:900px ){
 
     /*Block allows for stacking*/
     .row{
