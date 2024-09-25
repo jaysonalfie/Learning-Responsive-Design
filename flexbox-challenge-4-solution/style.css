@@ -1,0 +1,90 @@
+/* style.css 
+437px = mobile design*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+      /*primary-colors*/
+      --header--color:#F3EED9;
+      --secondary-color:#222C2A;
+      --ternary-color:#824936;
+
+        /*Font sizes*/
+    --paragraphHeading-font: 1.125rem;
+    --heading-font: 3.75rem;
+    --secondHeading-font: 2.25rem;
+    --paragraph-font: 1.3125rem;
+}
+
+ 
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Playfair Display', sans-serif;
+
+*/
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--paragraph-font);
+    line-height: 1.1;
+    color: var(--secondary-color);
+}
+
+img{
+    max-width: 100%;
+}
+
+h1, h2 {
+    margin-top: 0;
+    font-family: 'Playfair',sans-serif;
+    font-weight: 900;
+}
+
+section {
+    padding: 4em 0;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.intro{
+    background: var(--header--color);
+    padding: 200px 0;
+    text-align: center;
+    color: var(--ternary-color);
+}
+
+.intro__text{
+    text-transform: uppercase;
+    font-size: var(--paragraphHeading-font);
+    letter-spacing: 10px;
+    margin: 0 0 .25em;
+    color: var(--secondary-color);
+}
+
+/*For larger font siez the line height should be small so that the spacing is not huge and vice versa*/
+.intro__title{
+    font-size: 3rem;
+}
+
+.section-title {
+    font-size: var(--secondHeading-font);
+    color:var(--header--color)
+}
+
+.section-title--dark {
+    color: var(--ternary-color);
+}
+
+.section-three{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.section-four{
+    background-color: var(--ternary-color);
+    color: #fff;
+}
