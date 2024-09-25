@@ -49,7 +49,9 @@ section {
 .container{
     width: 85%;
     margin: 0 auto;
+    max-width: 1128px;
 }
+
 .intro{
     background: var(--header--color);
     padding: 200px 0;
@@ -87,4 +89,23 @@ section {
 .section-four{
     background-color: var(--ternary-color);
     color: #fff;
+}
+
+/*Media Queries*/
+@media (min-width:800px) {
+   .row{
+    display: flex;
+   }
+
+   .col{
+    width: 100%;
+   }
+
+   .col + .col {
+    margin-left: 5em;
+   }
+   
+   .intro__title{
+    font-size: var(--heading-font);
+   }
 }
