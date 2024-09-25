@@ -57,6 +57,10 @@ section {
     padding: 200px 0;
     text-align: center;
     color: var(--ternary-color);
+    /*min-height- can allows additional information and it grows with it*/
+    min-height: 660px;
+    display: flex;
+    align-items: center;
 }
 
 .intro__text{
@@ -79,6 +83,7 @@ section {
 
 .section-title--dark {
     color: var(--ternary-color);
+    text-align: center;
 }
 
 .section-three{
@@ -104,7 +109,7 @@ section {
    .col + .col {
     margin-left: 5em;
    }
-   
+
    .intro__title{
     font-size: var(--heading-font);
    }
