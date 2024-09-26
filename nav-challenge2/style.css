@@ -124,6 +124,7 @@ header {
     visibility: hidden;
     height: 0;
     position: absolute;
+    font-size: 1rem;
 }
 
 .nav--visible {
@@ -138,9 +139,12 @@ header {
     padding: 0;
     list-style: none;
 }
+.nav__list--primary{
+    margin-bottom: 2em;
+}
 
 .nav__item {
-    margin-bottom: .9em;
+    margin-top:.75em;
 }
 
 .nav__link{
@@ -149,10 +153,16 @@ header {
     text-transform: uppercase;
 }
 
+.nav__link:hover, 
+.nav__link:focus{
+    opacity: .65;
+}
+
+
 
 .nav__link--button{
     color: #136c72;
-    padding: .20em 2em;
+    padding: .25em .75em;
     background: #fff;
     border-radius: 10em;
 
@@ -204,10 +214,9 @@ header {
     .nav {
         visibility: visible;
         display: flex;
-        height: auto;
-        justify-content: space-between;
         align-items: center;
-        flex-grow: 1;
+        height: auto;  
+        position: relative;
 
     }
 
@@ -220,7 +229,11 @@ header {
     }
 
     .nav__list--primary{
-        margin:auto;
+        margin: 0 auto;
+    }
+
+    .nav__item{
+        margin: 0;
     }
 
     .nav__item + .nav__item{
